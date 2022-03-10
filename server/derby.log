@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Feb 08 10:39:37 GMT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017e-d8ea-d99b-00000ae38dc0 
+on database directory memory:/home/shittu/Documents/GitHub/idris/server/ba4649a4-8d41-4e58-b30f-a8d46cf8c282 with class loader java.net.URLClassLoader@90a741d 
+Loaded from file:/home/shittu/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Private Build
+java.runtime.version=1.8.0_312-8u312-b07-0ubuntu1~20.04-b07
+user.dir=/home/shittu/Documents/GitHub/idris/server
+os.name=Linux
+os.arch=amd64
+os.version=5.13.0-27-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

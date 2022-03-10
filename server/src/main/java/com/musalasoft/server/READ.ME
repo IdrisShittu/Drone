@@ -1,0 +1,56 @@
+## Drones
+
+[[_TOC_]]
+
+---
+
+:scroll: **START**
+
+# Install Java8 and maven
+* sudo add-apt-repository ppa:webupd8team/java
+* sudo apt-get update
+* sudo apt-get install -y oracle-java8-installer
+* sudo apt-get install -y maven
+
+# To Build the project
+`mvn clean install`
+
+# Run the project
+`mvn spring-boot:run`
+
+
+
+#API End Points
+
+* GET Mapping - Get All Drones http://localhost:8080/drones
+
+* GET Mapping - Get Available Drones http://localhost:8080/drones/available
+
+* GET Mapping - Get Drone with Serail Number http://localhost:8080/drone/00002
+
+* GET Mapping - Get Drone Battery Level  http://localhost:8080/drone/00001/battery
+
+* GET Mapping - Get Drone Load  http://localhost:8080/drone/00001/load
+
+* GET Mapping - Get All Medications  http://localhost:8080/medications
+
+*POST Mapping - register a drone
+curl -X POST -H 'Content-Type: application/json' -i http://localhost8080/drone/register
+
+--body '{
+    "serialNumber": "102",
+    "model": "LIGHTWEIGHT",
+    "weight": 500,
+    "battery": 100,
+    "state": "IDLE"
+}'
+
+* PUT Mapping - lOAD a drone with medication
+curl -X POST -H 'Content-Type: application/json' -i http://localhost8080/drone/00002
+
+--body '{
+    "name": "Balm",
+    "weight": 30,
+    "code": 800,
+    "imageURI": "bit.ly/12343"
+}'
